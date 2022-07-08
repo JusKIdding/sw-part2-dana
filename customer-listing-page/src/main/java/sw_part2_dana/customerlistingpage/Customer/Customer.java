@@ -1,4 +1,4 @@
-package sw_part2_dana.Customer;
+package sw_part2_dana.customerlistingpage.Customer;
 
 import java.time.LocalDate;
 
