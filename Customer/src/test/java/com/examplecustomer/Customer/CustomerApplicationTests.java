@@ -1,10 +1,10 @@
-package sw_part2_dana.customerlistingpage;
+package com.examplecustomer.Customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CustomerListingPageApplicationTests {
+class CustomerApplicationTests {
 
 	@Test
 	void contextLoads() {
