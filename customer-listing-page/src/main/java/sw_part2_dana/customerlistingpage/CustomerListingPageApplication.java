@@ -3,6 +3,7 @@ package sw_part2_dana.customerlistingpage;
 import java.util.*;
 import java.time.LocalDate;
 
+import org.apache.tomcat.jni.Local;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,13 +20,14 @@ public class CustomerListingPageApplication {
 	}
 
 	@GetMapping
-	public List<String> hello(){
-		List<String> helloList = new ArrayList<String>();
+	public List<Customer> getCustomerList() {
+		List<Customer> customerList = new ArrayList<Customer>();
 
-		helloList.add("Hello");
-		helloList.add("World");
+		Customer cust1 = new Customer((long) (1), "CustName", LocalDate.of(2001, 1, 1), "IC NO",
+				LocalDate.of(2022, 7, 9), "Address");
+		customerList.add(cust1);
 
-		return helloList;
+		return customerList;
 	}
-	
+
 }
