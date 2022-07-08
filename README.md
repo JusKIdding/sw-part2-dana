@@ -1,5 +1,5 @@
 # sw-part2-dana
-for Sunway Part 2 Assessment
+For Sunway Part 2 Assessment from candidate Dana
 
 Please note:
 This is made with minimal knowledge of Spring Boot Framework. 
