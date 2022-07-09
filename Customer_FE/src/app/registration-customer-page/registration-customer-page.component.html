@@ -20,9 +20,9 @@
     </div>
     <div>
         <label>Date of Birth:</label>
-        <input id="dob" type="date" formControlName="dob">
+        <input id="dob" type="date" formControlName="dob" name="dob">
         <div class="alert error"
-            *ngIf="">
+            *ngIf="customerForm.controls['dob'].errors?.['age']">
             <strong>Error: </strong> User is not above 18 years old
         </div>
     </div>
