@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Customer } from '../Customer/customer';
 import { CustomerAPIServiceService } from '../Customer/customer-apiservice.service';
+import { AgeValidator } from '../Customer/custom-validators/age.validator';
 
 @Component({
   selector: 'app-registration-customer-page',
@@ -18,15 +19,20 @@ export class RegistrationCustomerPageComponent {
   customerForm = this.formBuilder.group({
     name: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
     dob: '',
-    idNo: '',
-    regDate: '',
+    idNo: ['', [Validators.required, Validators.pattern("^[0-9]*$")]],
+    regDate: ['', AgeValidator],
     address: ''
   });
 
-  onSubmit(): void {
-    //Process submit data here
-    console.warn('New User information has been submitted', this.customerForm.value);
-    this.customerForm.reset();
+  get age(){
+    return this.customerForm.get('regDate');
+  }
+
+  onSubmit(){
+    if(!this.customerForm.valid){
+      alert('Unable to create account. The customer is not of age of 18 and above.');
+      return false;
+    } 
   }
 
   /*

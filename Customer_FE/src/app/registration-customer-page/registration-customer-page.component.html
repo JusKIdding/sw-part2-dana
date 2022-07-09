@@ -4,22 +4,31 @@
 <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
     <div>
         <label>ID No:</label>
-        <input id="idNo" type="text" formControlName="idNo">
+        <input id="idNo" maxlength="12" type="text" formControlName="idNo">
+        <div class="alert warning"
+            *ngIf="customerForm.controls['idNo'].invalid  && customerForm.controls['idNo'].touched  ">
+            <strong>Warning:</strong> Please enter numbers only.
+        </div>
     </div>
     <div>
         <label>Name:</label>
         <input id="name" type="text" formControlName="name">
-        <div class="alert warning" *ngIf="customerForm.controls['name'].invalid  && customerForm.controls['name'].touched">
+        <div class="alert warning"
+            *ngIf="customerForm.controls['name'].invalid && customerForm.controls['name'].touched">
             <strong>Warning:</strong> Please enter alphabets only.
         </div>
     </div>
     <div>
         <label>Date of Birth:</label>
         <input id="dob" type="date" formControlName="dob">
+        <div class="alert error"
+            *ngIf="">
+            <strong>Error: </strong> User is not above 18 years old
+        </div>
     </div>
     <div>
         <label>Address:</label>
-        <input id="address" type="text" formControlName="address">
+        <input maxlength="100" id="address" type="text" formControlName="address">
     </div>
 
     <button class="button" type="submit">Submit</button>
