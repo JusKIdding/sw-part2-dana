@@ -1,5 +1,8 @@
-import { Component, OnInit, ɵLocaleDataIndex } from '@angular/core';
-import customerData_json from '../CustomerListingPage.json';
+import { Component, OnInit } from '@angular/core';
+import customerData_json from '../../assets/CustomerListingPage.json';
+import { MatTableDataSource } from '@angular/material/table';
+import { Customer } from '../Customer/customer';
+import { ApiService } from '../Customer/api.service';
 
 @Component({
   selector: 'app-customer-listing-page',
@@ -8,6 +11,26 @@ import customerData_json from '../CustomerListingPage.json';
 })
 export class CustomerListingPageComponent implements OnInit {
 
+  customer:Customer[] = [];
+
+  displayColumnHeaders: String[] = ["name", "dob", "idNo", "regDate", "address"];  
+
+  public dataSource = new MatTableDataSource<Customer>();
+
+  constructor(private jsonApiService : ApiService) {}
+
+  ngOnInit() {
+    this.getCustomerInformation_JSON();
+  }
+
+  getCustomerInformation_JSON() {
+    this.jsonApiService.getCustomerInformation_JSON().subscribe((res)=>{
+      console.log(res);
+      this.dataSource.data = res;
+    })
+  }
+
+  /*
   public customerList_JSON: {
     name: String,
     dob: String,
@@ -16,9 +39,7 @@ export class CustomerListingPageComponent implements OnInit {
     address: String
   }[] = customerData_json;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  dataSource = new MatTableDataSource(this.customerList_JSON);
+  */
 
 }

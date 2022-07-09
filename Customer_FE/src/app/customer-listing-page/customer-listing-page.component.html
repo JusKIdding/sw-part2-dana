@@ -1,8 +1,52 @@
-<div style="text-align:center">
+<div class="flex-container">
     <h2>
         Customer List Page
     </h2>
-    <ul *ngFor="let customer of customerList_JSON">
+</div>
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dob">
+        <th mat-header-cell *matHeaderCellDef> Date of Birth </th>
+        <td mat-cell *matCellDef="let element"> {{element.dob}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="idNo">
+        <th mat-header-cell *matHeaderCellDef> ID No </th>
+        <td mat-cell *matCellDef="let element"> {{element.idNo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="regDate">
+        <th mat-header-cell *matHeaderCellDef> Registration Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.regDate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef> Address </th>
+        <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayColumnHeaders"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayColumnHeaders;"></tr>
+</table>
+
+<!-- <table mat-table [dataSource]="dataSource" matSort (matSortChange)="($event)"
+    class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">
+            No.
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+</table> -->
+
+<!-- <ul *ngFor="let customer of customerList_JSON">
         <li>
             <h3>
                 Customer Name :{{customer.name}},
@@ -12,5 +56,4 @@
                 Customer Address: {{customer.address}}
             </h3>
         </li>
-    </ul>
-</div>
+    </ul> -->

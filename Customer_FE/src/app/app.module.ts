@@ -8,6 +8,14 @@ import { RegistrationCustomerPageComponent } from './registration-customer-page/
 import { EditCustomerPageComponent } from './edit-customer-page/edit-customer-page.component';
 import { CustomermainpageComponent } from './customermainpage/customermainpage.component';
 import { CustomermainpageroutingModule } from './customermainpagerouting/customermainpagerouting.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSortModule } from '@angular/material/sort';
+
+import { HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +28,14 @@ import { CustomermainpageroutingModule } from './customermainpagerouting/custome
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustomermainpageroutingModule
+    CustomermainpageroutingModule,
+    NoopAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatSortModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
