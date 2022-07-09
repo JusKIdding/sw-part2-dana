@@ -58,7 +58,7 @@ public class CustomerService {
         Customer customer = customerRepository.findById(custIdKey)
                 .orElseThrow(() -> new IllegalStateException("This customer " + custIdKey + " does not exist"));
 
-        //maybe go with 14 to adapt to "-" in the IC
+        //todo: maybe go with 14 to adapt to "-" in the IC
         if (idNo != null && idNo.length() == 12 && !Objects.equals(customer.getIdNo(), idNo)) {
             customer.setIdNo(idNo);
         }
