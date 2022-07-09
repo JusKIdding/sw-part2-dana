@@ -2,7 +2,7 @@
 	{
       "name":"Customer Name 1",
       "dob":"07-07-1997",
-      "idNo":"070707-10-7070",
+      "idNo":"070707107070",
       "regDate":"07-06-2022",
       "address":"No 7, USJ 7, Jalan USJ 7, 47600 SUBANG JAYA"
    },
@@ -10,31 +10,31 @@
    {
       "name":"Customer Name 2",
       "dob":"08-08-1998",
-      "idNo":"080808-10-8080",
+      "idNo":"080808108080",
       "regDate":"07-06-2022",
       "address":"No 8, USJ 8, Jalan USJ 8, 47600 SUBANG JAYA"
    },
 	
    {
-      "name":"Customer Name 1",
+      "name":"Customer Name 3",
       "dob":"01-01-2001",
-      "idNo":"010101-10-1010",
+      "idNo":"010101101010",
       "regDate":"07-06-2022",
       "address":"No 1, USJ 1, Jalan USJ 1, 47600 SUBANG JAYA"
    },
    
    {
-      "name":"Customer Name 2",
+      "name":"Customer Name 4",
       "dob":"02-02-2002",
-      "idNo":"020202-10-2020",
+      "idNo":"020202102020",
       "regDate":"07-06-2022",
       "address":"No 2, USJ 2, Jalan USJ 2, 47600 SUBANG JAYA"
    },
    
    {
-	  "name":"Customer Name 3",
+	  "name":"Customer Name 5",
       "dob":"03-03-2003",
-      "idNo":"030303-10-3030",
+      "idNo":"030303103030",
       "regDate":"07-06-2022",
       "address":"No 3, USJ 3, Jalan USJ 3, 47600 SUBANG JAYA"
    }
