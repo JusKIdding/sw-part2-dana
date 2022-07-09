@@ -7,11 +7,11 @@ import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class JsonApiServiceService {
 
-  // constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  // getCustomerInformation_JSON(): Observable<Customer[]> {
-  //   return this.httpClient.get<Customer[]>(`${environment.baseUrl}CustomerListingPage.json`);
-  // }
+  getCustomerInformation_JSON(): Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(`${environment.baseUrl}CustomerListingPage.json`);
+  }
 }

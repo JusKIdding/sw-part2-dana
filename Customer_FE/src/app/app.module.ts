@@ -21,6 +21,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {TextFieldModule} from '@angular/cdk/text-field';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatSortModule,
     MatToolbarModule,
     MatButtonModule,
+    TextFieldModule,
     
   ],
   providers: [],
