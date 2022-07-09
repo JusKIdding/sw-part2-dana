@@ -11,4 +11,7 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     
     @Query("SELECT c FROM Customer c WHERE id_no = ?1")
     Optional <Customer> findCustomerById(String idNo);
+
+    // @Modifying
+    // @Query("UPDATE Customer c SET c.IdNo = :idNo and c.address = :address WHERE c.IdNo = idNo" )
 }
