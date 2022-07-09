@@ -2,7 +2,29 @@ package com.examplecustomer.Customer.Customer;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Customer {
+
+    @Id
+    @SequenceGenerator(
+        name="customer_sequence",
+        sequenceName = "customer_sequence",
+        allocationSize = 1
+    )
+
+    @GeneratedValue(
+        strategy = GenerationType.SEQUENCE,
+        generator = "customer_sequence"
+    )
+
     private long custIdKey;
     private String name;
     private LocalDate dob;
