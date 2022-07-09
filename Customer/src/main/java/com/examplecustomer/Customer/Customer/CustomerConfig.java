@@ -16,8 +16,8 @@ public class CustomerConfig {
         List <Customer> custList = new ArrayList<Customer>();
 
         return args -> {
-            Customer cust1 = new Customer("Customer Name 1", LocalDate.of(2001, Month.JANUARY, 1), "111111101111", LocalDate.of(2022, Month.JULY, 9), "address 1");
-            Customer cust2 = new Customer("Customer Name 2", LocalDate.of(2002, Month.FEBRUARY, 2), "222222102222", LocalDate.of(2022, Month.JULY, 9), "address 2");
+            Customer cust1 = new Customer("111111101111", "Customer Name 1", LocalDate.of(2001, Month.JANUARY, 1), "address 1", LocalDate.of(2022, Month.JULY, 9));
+            Customer cust2 = new Customer("222222102222", "Customer Name 2", LocalDate.of(2002, Month.FEBRUARY, 2), "address 2", LocalDate.of(2022, Month.JULY, 9));
 
             custList.add(cust1);
             custList.add(cust2);

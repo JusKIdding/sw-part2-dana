@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class JsonApiServiceService {
+export class JsonAPIServiceService {
 
   constructor(private httpClient: HttpClient) { }
 

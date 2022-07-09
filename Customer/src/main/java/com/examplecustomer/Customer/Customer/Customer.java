@@ -26,31 +26,31 @@ public class Customer {
     )
 
     private long custIdKey;
+    private String idNo;
     private String name;
     private LocalDate dob;
-    private String idNo;
-    private LocalDate regDate;
     private String address;
+    private LocalDate regDate;
 
 
     public Customer() {
     }
 
-    public Customer(long custIdKey, String name, LocalDate dob, String idNo, LocalDate regDate, String address) {
+    public Customer(long custIdKey, String idNo, String name, LocalDate dob, String address, LocalDate regDate) {
         this.custIdKey = custIdKey;
+        this.idNo = idNo;
         this.name = name;
         this.dob = dob;
-        this.idNo = idNo;
-        this.regDate = regDate;
         this.address = address;
+        this.regDate = regDate;
     }
 
-    public Customer(String name, LocalDate dob, String idNo, LocalDate regDate, String address) {
+    public Customer(String idNo, String name, LocalDate dob, String address, LocalDate regDate) {
+        this.idNo = idNo;
         this.name = name;
         this.dob = dob;
-        this.idNo = idNo;
-        this.regDate = regDate;
         this.address = address;
+        this.regDate = regDate;
     }
 
 

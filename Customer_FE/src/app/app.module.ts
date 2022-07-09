@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CustomerListingPageComponent } from './customer-listing-page/customer-listing-page.component';
 import { RegistrationCustomerPageComponent } from './registration-customer-page/registration-customer-page.component';
@@ -20,8 +21,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import {TextFieldModule} from '@angular/cdk/text-field';
+import { MatButtonModule } from '@angular/material/button';
+import { TextFieldModule } from '@angular/cdk/text-field';
 
 
 @NgModule({
@@ -38,6 +39,9 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     CustomermainpageroutingModule,
     NoopAnimationsModule,
 
+    FormsModule,
+    ReactiveFormsModule,
+
     HttpClientModule,
     BrowserAnimationsModule,
 
@@ -49,7 +53,7 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatToolbarModule,
     MatButtonModule,
     TextFieldModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
