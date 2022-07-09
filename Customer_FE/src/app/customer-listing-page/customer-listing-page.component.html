@@ -1,1 +1,16 @@
-<p>customer-listing-page works!</p>
+<div style="text-align:center">
+    <h2>
+        Customer List Page
+    </h2>
+    <ul *ngFor="let customer of customerList_JSON">
+        <li>
+            <h3>
+                Customer Name :{{customer.name}},
+                Customer DOB : {{customer.dob}},
+                Customer ID No: {{customer.idNo}},
+                Customer Registeration Date: {{customer.regDate}},
+                Customer Address: {{customer.address}}
+            </h3>
+        </li>
+    </ul>
+</div>
