@@ -10,6 +10,7 @@ Reference:
 1) Spring Boot Tutorial - https://youtu.be/9SGDpanrc8U
 2) Integrating an Angular project with Spring Boot - https://medium.com/@majdasab/integrating-an-angular-project-with-spring-boot-e3a043b7307b
 3) Stackoverflow forum [when encountering errors]
+4) w3schools
 
 todo:
 Clean up codes/optimization
