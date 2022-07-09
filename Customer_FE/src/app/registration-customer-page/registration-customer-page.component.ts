@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Customer } from '../Customer/customer';
 import { CustomerAPIServiceService } from '../Customer/customer-apiservice.service';
 
@@ -16,7 +16,7 @@ export class RegistrationCustomerPageComponent {
   ) { }
 
   customerForm = this.formBuilder.group({
-    name: '',
+    name: ['', [Validators.required, Validators.pattern("[a-zA-Z][a-zA-Z]+")]],
     dob: '',
     idNo: '',
     regDate: '',

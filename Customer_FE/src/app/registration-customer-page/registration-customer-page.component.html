@@ -3,8 +3,23 @@
 <h2> Please enter customer details: </h2>
 <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
     <div>
-        <label>Id No:</label>
-        <input id ="idNo" type="text" formControlName="idNo">
+        <label>ID No:</label>
+        <input id="idNo" type="text" formControlName="idNo">
+    </div>
+    <div>
+        <label>Name:</label>
+        <input id="name" type="text" formControlName="name">
+        <div class="alert warning" *ngIf="customerForm.controls['name'].invalid  && customerForm.controls['name'].touched">
+            <strong>Warning:</strong> Please enter alphabets only.
+        </div>
+    </div>
+    <div>
+        <label>Date of Birth:</label>
+        <input id="dob" type="date" formControlName="dob">
+    </div>
+    <div>
+        <label>Address:</label>
+        <input id="address" type="text" formControlName="address">
     </div>
 
     <button class="button" type="submit">Submit</button>
