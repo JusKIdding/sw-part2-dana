@@ -28,7 +28,7 @@ public class Customer {
     private long custIdKey;
     private String name;
     private LocalDate dob;
-    private String Id;
+    private String idNo;
     private LocalDate regDate;
     private String address;
 
@@ -36,19 +36,19 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(long custIdKey, String name, LocalDate dob, String Id, LocalDate regDate, String address) {
+    public Customer(long custIdKey, String name, LocalDate dob, String idNo, LocalDate regDate, String address) {
         this.custIdKey = custIdKey;
         this.name = name;
         this.dob = dob;
-        this.Id = Id;
+        this.idNo = idNo;
         this.regDate = regDate;
         this.address = address;
     }
 
-    public Customer(String name, LocalDate dob, String Id, LocalDate regDate, String address) {
+    public Customer(String name, LocalDate dob, String idNo, LocalDate regDate, String address) {
         this.name = name;
         this.dob = dob;
-        this.Id = Id;
+        this.idNo = idNo;
         this.regDate = regDate;
         this.address = address;
     }
@@ -78,13 +78,13 @@ public class Customer {
         this.dob = dob;
     }
 
-    public String getId() {
-        return this.Id;
+    public String getIdNo() {
+        return this.idNo;
     }
 
-    public void setId(String Id) {
-        this.Id = Id;
-    }
+    public void setIdNo(String idNo) {
+        this.idNo = idNo;
+    }    
 
     public LocalDate getRegDate() {
         return this.regDate;
