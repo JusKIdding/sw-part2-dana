@@ -1,5 +1,5 @@
-# Sunway Part 2 Assessmentt - Spring Boot Framework 
-For Sunway Part 2 Assessment from candidate Dana
+# Sunway Part 2 Asessment - Spring Boot Framework 
+For Sunway Part 2 Asessment from candidate Dana
 
 Please note:
 This is made with minimal knowledge of Spring Boot Framework and developing BE from scratch. Only have experience in maintaining FE and BE. 
