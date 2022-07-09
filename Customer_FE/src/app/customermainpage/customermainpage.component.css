@@ -1,0 +1,13 @@
+.navigation-bar {
+    background-color: black;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navigation-bar a {
+    font-size: 18;
+    text-align: center;
+}
