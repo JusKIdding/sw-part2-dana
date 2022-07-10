@@ -2,7 +2,7 @@
 For Sunway Part 2 Asessment from candidate Dana
 
 Please note:
-The BE is developed from scratch using Spring Boot Framework. The BE is developed using Angular Framework. Experience is limited to maintenance of FE and BE systems.
+The BE is developed from scratch using Spring Boot Framework. The FE is developed using Angular Framework. Experience is limited to maintenance of FE and BE systems.
 
 I apologize if the codes doesn't look too clean or optimize according to Part 2 of the IT assessment. 
 ***
