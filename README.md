@@ -52,7 +52,7 @@ In the Params tab:
 | idNo | 000000100000 | 
 | address | Changed Value | 
 
-13) In the same command prompt with psql, enter command: ``` SELECT * FROM customer; ``` The cust_id_key row with the value of 1 will have updated values.
+13) In the same command prompt with psql, enter command: ``` SELECT * FROM customer; ```<br/> The cust_id_key row with the value of 1 will have updated values.
 
 
 
