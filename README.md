@@ -34,6 +34,7 @@ If it is working, user should be able to see 2 rows of data from the query.
 11) POST: http://localhost:8080/api/v1/customer
 
 In the Body tab:
+``` 
 {
     "idNo":"333333-10-3333",
     "name":"Customer Name 3",
@@ -41,13 +42,18 @@ In the Body tab:
     "address":"address 3",
     "regDate":"2022-07-09"    
 }
+```
 
 12) PUT: http://localhost:8080/api/v1/customer/1?idNo=000000100000&address=Changed 
 
 In the Params tab:
+
 KEY   VALUE
+
 idNO  000000100000
+
 address Changed Value
+
 
 13) In the same command prompt with psql, enter command: ``` SELECT * FROM customer; ``` The cust_id_key row with the value of 1 will have updated values.
 
