@@ -6,9 +6,13 @@ This is made with minimal knowledge of Spring Boot Framework and developing BE f
 
 I apologize if the clothes doesn't look too clean or optimize according to Part 2 of the IT assessment. 
 
+
 Missing validation:
 __FE__
 1) DOB [Registration User Page]
+
+Missing connection for FE to BE (due to lack of understanding despite successfully managed to test BE with Spring Boot framework)
+Therefore, unable to INSERT and UPDATE as according to Part 2 assessment.
 
 
 Reference:
@@ -19,4 +23,5 @@ Reference:
 5) w3schools
 
 todo:
-Clean up codes/optimization
+1) Clean up codes/optimization
+2) Get more practice on development side for FE to BE connection
