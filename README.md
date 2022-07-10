@@ -18,7 +18,7 @@ Steps
 1) clone project to new folder
 2) go to Customer_FE folder via cmd prompt
 3) Enter command: " npm install "
-4) Enter command: " ng s --open "
+4) Enter command: " ng s --open "__
 This will open a new tab in browser for viewing/navigation
 
 5) Open Customer folder with vscode
