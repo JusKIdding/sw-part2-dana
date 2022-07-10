@@ -47,6 +47,11 @@ In the Body tab:
 12) PUT: http://localhost:8080/api/v1/customer/1?idNo=000000100000&address=Changed 
 
 In the Params tab:
+| Heading 1 | Heading 2 | Heading 3 |  
+|-----------|:-----------:|-----------:|  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |
+
 | KEY | VALUE | 
 |-----------|:-----------:|
 | Cell A1 | Cell A2 | 
