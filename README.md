@@ -15,8 +15,8 @@ Please have:
 6) vscode
 
 Steps 
-1) clone project to new folder
-2) go to Customer_FE folder via cmd prompt
+1) Clone project to new folder
+2) Go to Customer_FE folder via cmd prompt
 3) Enter command: ``` npm install ```
 4) Enter command: ``` ng s --open ```
 This will open a new tab in browser for viewing/navigation
