@@ -61,7 +61,7 @@ Missing validation:
 __FE__
 1) DOB [Registration User Page]
 
-Missing connection for FE to BE (due to lack of understanding despite successfully managed to test BE with Spring Boot framework)
+Missing connection for FE to BE (due to lack of understanding despite successfully managed to test BE with Spring Boot framework)<br/>
 Therefore, unable to INSERT and UPDATE as according to Part 2 assessment.
 
 ***
