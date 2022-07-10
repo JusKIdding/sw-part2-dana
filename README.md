@@ -32,6 +32,7 @@ If it is working, user should be able to see 2 rows of data from the query.
 
 10) Open Postman software
 11) POST: http://localhost:8080/api/v1/customer
+
 In the Body tab:
 {
     "idNo":"333333-10-3333",
@@ -42,6 +43,7 @@ In the Body tab:
 }
 
 12) PUT: http://localhost:8080/api/v1/customer/1?idNo=000000100000&address=Changed 
+
 In the Params tab:
 KEY   VALUE
 idNO  000000100000
