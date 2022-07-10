@@ -22,7 +22,7 @@ Steps
 This will open a new tab in browser for viewing/navigation
 
 5) Open Customer folder with vscode
-6) Open terminal and enter command: ``` mvn spring-boot:run ```
+6) Open terminal and enter command: ``` mvn spring-boot:run ```<br/>
 This will activate the Spring Boot project
 
 7) To verify if the database and the Customer table is available, enter command: ``` psql -U posgres ``` and enter the password (that user had first created when first installing postgreSQL)
@@ -47,21 +47,10 @@ In the Body tab:
 12) PUT: http://localhost:8080/api/v1/customer/1?idNo=000000100000&address=Changed 
 
 In the Params tab:
-| Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |
-
 | KEY | VALUE | 
 |-----------|:-----------:|
-| Cell A1 | Cell A2 | 
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |
-   VALUE
-
-idNO  000000100000
-
-address Changed Value
-
+| idNo | 000000100000 | 
+| address | Changed Value | 
 
 13) In the same command prompt with psql, enter command: ``` SELECT * FROM customer; ``` The cust_id_key row with the value of 1 will have updated values.
 
