@@ -4,9 +4,8 @@ For Sunway Part 2 Asessment from candidate Dana
 Please note:
 This is made with minimal knowledge of Spring Boot Framework and developing BE from scratch. Only have experience in maintaining FE and BE. 
 
-I apologize if the clothes doesn't look too clean or optimize according to Part 2 of the IT assessment. <br/>
-
-
+I apologize if the clothes doesn't look too clean or optimize according to Part 2 of the IT assessment. 
+***
 Missing validation:
 __FE__
 1) DOB [Registration User Page]
