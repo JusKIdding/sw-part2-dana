@@ -27,7 +27,7 @@ This will activate the Spring Boot project
 
 7) To verify if the database and the Customer table is available, enter command " psql -U posgres " and enter the password (that user had first created when first installing postgreSQL)
 8) In the same command prompt with psql, enter command: " \c customer "
-9) In the same command prompt with psql, enter command: " SELECT * FROM customer; ". If it is working, user should be able to see 2 rows of data from the query.
+9) In the same command prompt with psql, enter command: " SELECT * FROM customer; ". <br\>If it is working, user should be able to see 2 rows of data from the query.
 
 10) Open Postman software
 11) POST: http://localhost:8080/api/v1/customer
